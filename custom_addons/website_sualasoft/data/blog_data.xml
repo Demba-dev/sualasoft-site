@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Blog Categories -->
+        <record id="blog_category_odoo" model="blog.category">
+            <field name="name">Odoo</field>
+            <field name="slug">odoo</field>
+            <field name="description">Tutoriels et astuces sur Odoo, implémentation et personnalisation.</field>
+            <field name="color">1</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="blog_category_web" model="blog.category">
+            <field name="name">Développement Web</field>
+            <field name="slug">developpement-web</field>
+            <field name="description">Articles sur les technologies web, frameworks et bonnes pratiques.</field>
+            <field name="color">3</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="blog_category_mobile" model="blog.category">
+            <field name="name">Développement Mobile</field>
+            <field name="slug">developpement-mobile</field>
+            <field name="description">Conseils et tutoriels pour le développement d'applications mobiles.</field>
+            <field name="color">5</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="blog_category_infrastructure" model="blog.category">
+            <field name="name">Infrastructure SI</field>
+            <field name="slug">infrastructure-si</field>
+            <field name="description">Guides sur l'infrastructure, DevOps, sécurité et déploiement.</field>
+            <field name="color">7</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="blog_category_conseils" model="blog.category">
+            <field name="name">Conseils &amp; Bonnes Pratiques</field>
+            <field name="slug">conseils-bonnes-pratiques</field>
+            <field name="description">Partage d'expériences et conseils pour réussir vos projets.</field>
+            <field name="color">2</field>
+            <field name="active">True</field>
+        </record>
+
+    </data>
+</odoo>

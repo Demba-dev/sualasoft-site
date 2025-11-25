@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Contact Form List View -->
+    <record id="sualasoft_contact_list" model="ir.ui.view">
+        <field name="name">sualasoft.contact.list</field>
+        <field name="model">sualasoft.contact</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="first_name"/>
+                <field name="last_name"/>
+                <field name="email"/>
+                <field name="phone"/>
+                <field name="project_type"/>
+                <field name="created_date"/>
+                <field name="processed"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Contact Form View -->
+    <record id="sualasoft_contact_form" model="ir.ui.view">
+        <field name="name">sualasoft.contact.form</field>
+        <field name="model">sualasoft.contact</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="first_name"/>
+                        <field name="last_name"/>
+                    </group>
+                    <group>
+                        <field name="email"/>
+                        <field name="phone"/>
+                    </group>
+                    <group>
+                        <field name="project_type"/>
+                        <field name="processed"/>
+                    </group>
+                    <group>
+                        <field name="created_date"/>
+                    </group>
+                    <field name="message"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Contact Search View -->
+    <record id="sualasoft_contact_search" model="ir.ui.view">
+        <field name="name">sualasoft.contact.search</field>
+        <field name="model">sualasoft.contact</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="first_name" string="First Name"/>
+                <field name="email" string="Email"/>
+                <field name="project_type" string="Project Type"/>
+                <filter string="Not Processed" name="not_processed" domain="[('processed', '=', False)]"/>
+                <filter string="Processed" name="processed" domain="[('processed', '=', True)]"/>
+                <separator/>
+                <filter string="By Project Type" name="by_project" domain="[]" context="{'group_by': 'project_type'}"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Contact Action -->
+    <record id="sualasoft_contact_action" model="ir.actions.act_window">
+        <field name="name">Contact Submissions</field>
+        <field name="res_model">sualasoft.contact</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="sualasoft_contact_search"/>
+    </record>
+
+</odoo>

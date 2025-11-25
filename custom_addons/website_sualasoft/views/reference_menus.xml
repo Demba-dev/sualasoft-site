@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Menu racine -->
+        <record id="sualasoft_menu_root" model="website.menu">
+            <field name="name">Sualasoft</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <!-- Menu Home -->
+        <record id="sualasoft_menu_home" model="website.menu">
+            <field name="name">Home</field>
+            <field name="url">/homepage</field>
+            <field name="parent_id" ref="sualasoft_menu_root"/>
+            <field name="sequence">15</field>
+        </record>
+
+        <!-- Menu Services -->
+        <record id="sualasoft_menu_services" model="website.menu">
+            <field name="name">Services</field>
+            <field name="url">/services</field>
+            <field name="parent_id" ref="sualasoft_menu_root"/>
+            <field name="sequence">20</field>
+        </record>
+
+        <!-- Menu References -->
+        <record id="sualasoft_menu_references" model="website.menu">
+            <field name="name">Références</field>
+            <field name="url">/references</field>
+            <field name="parent_id" ref="sualasoft_menu_root"/>
+            <field name="sequence">25</field>
+        </record>
+
+        <!-- Menu Contact -->
+        <record id="sualasoft_menu_contact" model="website.menu">
+            <field name="name">Contact</field>
+            <field name="url">/contact</field>
+            <field name="parent_id" ref="sualasoft_menu_root"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <!-- Menu Legal Pages Root -->
+        <record id="sualasoft_menu_legal_root" model="website.menu">
+            <field name="name">Légal</field>
+            <field name="sequence">100</field>
+        </record>
+
+        <!-- Menu Legal Notices -->
+        <record id="sualasoft_menu_legal_notices" model="website.menu">
+            <field name="name">Mentions Légales</field>
+            <field name="url">/legal</field>
+            <field name="parent_id" ref="sualasoft_menu_legal_root"/>
+            <field name="sequence">10</field>
+        </record>
+
+        <!-- Menu Privacy Policy -->
+        <record id="sualasoft_menu_privacy" model="website.menu">
+            <field name="name">Politique de Confidentialité</field>
+            <field name="url">/privacy</field>
+            <field name="parent_id" ref="sualasoft_menu_legal_root"/>
+            <field name="sequence">20</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_sualasoft_reference_list" model="ir.ui.view">
+            <field name="name">sualasoft.reference.list</field>
+            <field name="model">sualasoft.reference</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="sector"/>
+                    <field name="reference_type"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_sualasoft_reference_form" model="ir.ui.view">
+            <field name="name">sualasoft.reference.form</field>
+            <field name="model">sualasoft.reference</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="sector"/>
+                            <field name="services"/>
+                            <field name="reference_type"/>
+                        </group>
+                        <group>
+                            <field name="description"/>
+                            <field name="image_id" widget="image"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_sualasoft_reference" model="ir.actions.act_window">
+            <field name="name">References</field>
+            <field name="res_model">sualasoft.reference</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="references_list" name="References List">
+            <div class="container">
+                <h1>Our References</h1>
+                <div class="row">
+                    <t t-foreach="references" t-as="ref">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img t-if="ref.image_id" t-att-src="image_data_uri(ref.image_id)" class="card-img-top" alt=""/>
+                                <div class="card-body">
+                                    <h5 class="card-title"><t t-out="ref.name"/></h5>
+                                    <p class="card-text"><t t-out="ref.description"/></p>
+                                    <p class="small text-muted"><t t-out="ref.sector"/></p>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </template>
+    </data>
+</odoo>

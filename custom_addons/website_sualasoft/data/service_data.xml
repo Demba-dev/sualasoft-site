@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="service_mobile" model="sualasoft.service">
+            <field name="name">Mobile Development</field>
+            <field name="code">mobile</field>
+            <field name="description">Développement d'applications mobiles iOS et Android</field>
+            <field name="color">1</field>
+        </record>
+
+        <record id="service_web" model="sualasoft.service">
+            <field name="name">Web Development</field>
+            <field name="code">web</field>
+            <field name="description">Développement web full-stack et progressive web apps</field>
+            <field name="color">2</field>
+        </record>
+
+        <record id="service_odoo" model="sualasoft.service">
+            <field name="name">Odoo Integration</field>
+            <field name="code">odoo</field>
+            <field name="description">Implémentation et personnalisation Odoo ERP</field>
+            <field name="color">3</field>
+        </record>
+
+        <record id="service_infra" model="sualasoft.service">
+            <field name="name">Infrastructure</field>
+            <field name="code">infra</field>
+            <field name="description">Cloud, DevOps et infrastructure SI</field>
+            <field name="color">4</field>
+        </record>
+    </data>
+</odoo>

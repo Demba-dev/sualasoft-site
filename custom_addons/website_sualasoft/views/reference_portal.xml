@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sualasoft_references_page" name="Sualasoft References">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="mb-4">Nos Références</h1>
+                            <p class="lead">Découvrez nos projets et réalisations pour nos clients</p>
+                        </div>
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="row mb-4">
+                        <div class="col-lg-12">
+                            <div class="btn-group" role="group">
+                                <t t-set="base_url" t-value="'/references'"/>
+                                <a href="/references" class="btn btn-outline-primary">Tous</a>
+                                <t t-foreach="services" t-as="service">
+                                    <a t-attf-href="/references?service_id=#{service.id}" class="btn btn-outline-primary">
+                                        <t t-esc="service.name"/>
+                                    </a>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- References Grid -->
+                    <div class="row">
+                        <t t-foreach="references" t-as="ref">
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100 shadow-sm">
+                                    <t t-if="ref.image">
+                                        <img t-attf-src="data:image/png;base64,#{ref.image}" class="card-img-top" alt="Client Logo"/>
+                                    </t>
+                                    <t t-else="">
+                                        <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                                            <i class="fa fa-briefcase fa-3x text-muted"></i>
+                                        </div>
+                                    </t>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <t t-esc="ref.name"/>
+                                        </h5>
+                                        <p t-if="ref.industry" class="card-text text-muted small">
+                                            <strong>Secteur:</strong>
+                                            <t t-esc="ref.industry"/>
+                                        </p>
+                                        <div t-if="ref.service_ids" class="mb-2">
+                                            <t t-foreach="ref.service_ids" t-as="service">
+                                                <span class="badge" t-attf-style="background-color: hsl(#{service.color}, 100%, 50%); color: white;">
+                                                    <t t-esc="service.name"/>
+                                                </span>
+                                            </t>
+                                        </div>
+                                        <p t-if="ref.description" class="card-text small">
+                                            <t t-esc="ref.description[:150] + '...' if len(ref.description) > 150 else ref.description"/>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <t t-if="ref.website">
+                                            <a t-attf-href="#{ref.website}" target="_blank" class="btn btn-sm btn-primary">
+                                                Visiter le site
+                                            </a>
+                                        </t>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+
+                    <!-- Empty State -->
+                    <t t-if="not references">
+                        <div class="alert alert-info" role="alert">
+                            Aucune référence trouvée pour cette catégorie.
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Mentions Légales Page -->
+    <template id="sualasoft_legal_notices" name="Mentions Légales">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container my-5">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <h1 class="mb-4">Mentions Légales</h1>
+                            
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">1. Éditeur du site</h2>
+                                <p>
+                                    <strong>Sualasoft</strong><br/>
+                                    Entreprise spécialisée dans le développement logiciel et l'intégration Odoo.
+                                </p>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">2. Hébergement</h2>
+                                <p>
+                                    Ce site est hébergé sur une infrastructure cloud sécurisée.<br/>
+                                    Politique de sécurité : données chiffrées et sauvegardes régulières.
+                                </p>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">3. Directeur de la Publication</h2>
+                                <p>
+                                    Le directeur de la publication est responsable du contenu publié sur ce site.
+                                </p>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">4. Propriété Intellectuelle</h2>
+                                <p>
+                                    Tous les contenus de ce site (textes, images, graphiques, logos) sont protégés par les lois sur la propriété intellectuelle. 
+                                    Toute reproduction ou utilisation sans autorisation est interdite.
+                                </p>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">5. Limitation de Responsabilité</h2>
+                                <p>
+                                    Sualasoft décline toute responsabilité pour :
+                                </p>
+                                <ul>
+                                    <li>Les interruptions d'accès au site</li>
+                                    <li>Les dommages résultant d'une utilisation inappropriée</li>
+                                    <li>Les virus ou logiciels malveillants</li>
+                                    <li>Les erreurs ou omissions du contenu</li>
+                                </ul>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">6. Liens Externes</h2>
+                                <p>
+                                    Sualasoft n'est pas responsable du contenu des sites externes auxquels renvoie ce site.
+                                </p>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">7. Cookies</h2>
+                                <p>
+                                    Ce site utilise des cookies pour améliorer l'expérience utilisateur et analyser le trafic.
+                                </p>
+                            </section>
+
+                            <div class="alert alert-info mt-5">
+                                <p class="mb-0">
+                                    <strong>Dernière mise à jour :</strong> 24 Novembre 2025
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <!-- Politique de Confidentialité Page -->
+    <template id="sualasoft_privacy_policy" name="Politique de Confidentialité">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container my-5">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <h1 class="mb-4">Politique de Confidentialité</h1>
+                            
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">1. Collecte de Données</h2>
+                                <p>
+                                    Sualasoft collecte les données personnelles que vous nous fournissez volontairement via :
+                                </p>
+                                <ul>
+                                    <li>Le formulaire de contact</li>
+                                    <li>Les inscriptions à des newsletters</li>
+                                    <li>Les cookies et traceurs analytiques</li>
+                                </ul>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">2. Données Collectées</h2>
+                                <p>
+                                    Les données collectées incluent :
+                                </p>
+                                <ul>
+                                    <li>Nom et prénom</li>
+                                    <li>Adresse email</li>
+                                    <li>Numéro de téléphone</li>
+                                    <li>Message et contenu du formulaire</li>
+                                    <li>Données de navigation (cookies)</li>
+                                </ul>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">3. Utilisation des Données</h2>
+                                <p>
+                                    Vos données sont utilisées pour :
+                                </p>
+                                <ul>
+                                    <li>Traiter votre demande de contact</li>
+                                    <li>Vous envoyer des communications pertinentes</li>
+                                    <li>Améliorer notre site web</li>
+                                    <li>Analyser le trafic et comprendre vos besoins</li>
+                                </ul>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">4. Partage des Données</h2>
+                                <p>
+                                    Sualasoft ne partage vos données personnelles avec des tiers que :
+                                </p>
+                                <ul>
+                                    <li>Si vous nous y autorisez explicitement</li>
+                                    <li>Si la loi l'exige</li>
+                                    <li>Avec nos partenaires de service (hébergeurs, prestataires)</li>
+                                </ul>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">5. Sécurité des Données</h2>
+                                <p>
+                                    Nous mettons en place des mesures de sécurité appropriées pour protéger vos données :
+                                </p>
+                                <ul>
+                                    <li>Chiffrement SSL/TLS</li>
+                                    <li>Serveurs sécurisés</li>
+                                    <li>Accès restreint aux données</li>
+                                </ul>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">6. Durée de Conservation</h2>
+                                <p>
+                                    Les données personnelles sont conservées aussi longtemps que nécessaire pour accomplir les objectifs pour lesquels elles ont été collectées, 
+                                    sauf si une durée plus longue est imposée par la loi.
+                                </p>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">7. Vos Droits</h2>
+                                <p>
+                                    Conformément au RGPD, vous disposez des droits suivants :
+                                </p>
+                                <ul>
+                                    <li>Droit d'accès à vos données</li>
+                                    <li>Droit de rectification</li>
+                                    <li>Droit à l'oubli</li>
+                                    <li>Droit à la portabilité</li>
+                                    <li>Droit d'opposition</li>
+                                </ul>
+                                <p>
+                                    Pour exercer ces droits, contactez-nous via le formulaire de contact.
+                                </p>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">8. Cookies</h2>
+                                <p>
+                                    Ce site utilise des cookies pour :
+                                </p>
+                                <ul>
+                                    <li>Mémoriser vos préférences</li>
+                                    <li>Analyser le trafic (Google Analytics)</li>
+                                    <li>Améliorer la performance</li>
+                                </ul>
+                                <p>
+                                    Vous pouvez configurer votre navigateur pour refuser les cookies.
+                                </p>
+                            </section>
+
+                            <section class="mb-5">
+                                <h2 class="h4 mb-3">9. Contact et Réclamations</h2>
+                                <p>
+                                    Pour toute question concernant cette politique ou pour exercer vos droits :
+                                </p>
+                                <p>
+                                    <strong>Email :</strong> contact@sualasoft.com<br/>
+                                    <strong>Formulaire :</strong> <a href="/contact">Nous contacter</a>
+                                </p>
+                            </section>
+
+                            <div class="alert alert-info mt-5">
+                                <p class="mb-0">
+                                    <strong>Dernière mise à jour :</strong> 24 Novembre 2025
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

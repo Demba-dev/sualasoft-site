@@ -1,0 +1,49 @@
+/* Sualasoft Partner Badge */
+.sualasoft-partnership {
+    background: linear-gradient(135deg, #f7f7f7 0%, #ffffff 100%);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #914ee3;
+}
+
+.sualasoft-partnership p strong {
+    color: #914ee3;
+}
+
+.sualasoft-partnership img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sualasoft-expertise {
+    background: linear-gradient(135deg, #f7f7f7 0%, #ffffff 100%);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #00a699;
+}
+
+.sualasoft-expertise p strong {
+    color: #00a699;
+}
+
+.sualasoft-expertise ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Footer improvements */
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #914ee3;
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+    .sualasoft-partnership,
+    .sualasoft-expertise {
+        margin-bottom: 20px;
+    }
+}

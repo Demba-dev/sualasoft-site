@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Backend menu for Blog Posts -->
+        <menuitem id="blog_menu_root" name="Blog" sequence="30"/>
+
+        <menuitem id="blog_menu_posts" 
+                  name="Blog Posts" 
+                  parent="blog_menu_root" 
+                  action="action_blog_post" 
+                  sequence="10"/>
+
+        <menuitem id="blog_menu_categories" 
+                  name="Categories" 
+                  parent="blog_menu_root" 
+                  action="action_blog_category" 
+                  sequence="20"/>
+
+        <!-- Website menu for Blog (public navigation) -->
+        <record id="blog_website_menu" model="website.menu">
+            <field name="name">Blog</field>
+            <field name="url">/blog</field>
+            <field name="parent_id" ref="sualasoft_menu_root"/>
+            <field name="sequence">40</field>
+        </record>
+
+    </data>
+</odoo>

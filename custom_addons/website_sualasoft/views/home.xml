@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sualasoft_homepage" name="Sualasoft Home">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container">
+                    <h1>Bienvenue sur le site de Sualasoft</h1>
+                    <p>Votre partenaire pour la transformation digitale.</p>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

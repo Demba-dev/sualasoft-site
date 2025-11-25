@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sualasoft_services" name="Sualasoft Services">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container">
+                    <h1>Nos Services</h1>
+                    <ul>
+                        <li>Développement Mobile</li>
+                        <li>Développement Web</li>
+                        <li>Infrastructure</li>
+                        <li>Implémentation Odoo</li>
+                    </ul>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

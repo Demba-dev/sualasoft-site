@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Service Type Views -->
+        <record id="sualasoft_service_list" model="ir.ui.view">
+            <field name="name">sualasoft.service.list</field>
+            <field name="model">sualasoft.service</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="description"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="sualasoft_service_form" model="ir.ui.view">
+            <field name="name">sualasoft.service.form</field>
+            <field name="model">sualasoft.service</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="color"/>
+                        </group>
+                        <group>
+                            <field name="description" widget="html"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="sualasoft_service_action" model="ir.actions.act_window">
+            <field name="name">Services</field>
+            <field name="res_model">sualasoft.service</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <!-- Reference Views -->
+        <record id="sualasoft_reference_list" model="ir.ui.view">
+            <field name="name">sualasoft.reference.list</field>
+            <field name="model">sualasoft.reference</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                    <field name="industry"/>
+                    <field name="service_ids" widget="many2many_tags"/>
+                    <field name="featured"/>
+                    <field name="active"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="sualasoft_reference_form" model="ir.ui.view">
+            <field name="name">sualasoft.reference.form</field>
+            <field name="model">sualasoft.reference</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="action_toggle_featured" type="object" class="oe_stat_button" icon="fa-star-o">
+                                <div class="o_field_widget o_stat_info">
+                                    <span class="o_stat_text">Featured</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Client Name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="industry"/>
+                                <field name="website"/>
+                                <field name="featured" readonly="1"/>
+                            </group>
+                            <group>
+                                <field name="sequence"/>
+                                <field name="active"/>
+                                <field name="created_date"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="service_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                        </group>
+                        <group>
+                            <field name="technologies"/>
+                        </group>
+                        <group>
+                            <field name="image" widget="image" class="oe_avatar" options="{'preview_image': 'image'}"/>
+                        </group>
+                        <notebook>
+                            <page string="Description">
+                                <field name="description" widget="html"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="sualasoft_reference_search" model="ir.ui.view">
+            <field name="name">sualasoft.reference.search</field>
+            <field name="model">sualasoft.reference</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" string="Client Name"/>
+                    <field name="industry" string="Industry"/>
+                    <field name="service_ids" string="Service"/>
+                    <filter string="Featured" name="featured" domain="[('featured', '=', True)]"/>
+                    <filter string="Active" name="active" domain="[('active', '=', True)]"/>
+                    <separator/>
+                    <filter string="By Industry" name="filter_industry" domain="[]" context="{'group_by': 'industry'}"/>
+                    <filter string="By Service" name="filter_service" domain="[]" context="{'group_by': 'service_ids'}"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="sualasoft_reference_action" model="ir.actions.act_window">
+            <field name="name">References</field>
+            <field name="res_model">sualasoft.reference</field>
+            <field name="view_mode">list,form</field>
+            <field name="search_view_id" ref="sualasoft_reference_search"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Blog Post List View -->
+        <record id="blog_post_list_view" model="ir.ui.view">
+            <field name="name">blog.post.list</field>
+            <field name="model">blog.post</field>
+            <field name="arch" type="xml">
+                <list string="Blog Posts">
+                    <field name="name"/>
+                    <field name="author_id"/>
+                    <field name="publication_date"/>
+                    <field name="category_ids" widget="many2many_tags"/>
+                    <field name="featured"/>
+                    <field name="active" optional="hide"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Blog Post Form View -->
+        <record id="blog_post_form_view" model="ir.ui.view">
+            <field name="name">blog.post.form</field>
+            <field name="model">blog.post</field>
+            <field name="arch" type="xml">
+                <form string="Blog Post">
+                    <header>
+                        <button name="action_toggle_featured" type="object" 
+                                string="Toggle Featured" class="oe_highlight"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name"/>
+                            <h1>
+                                <field name="name" placeholder="Blog Post Title"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="slug"/>
+                                <field name="author_id"/>
+                                <field name="publication_date"/>
+                                <field name="featured"/>
+                                <field name="active"/>
+                            </group>
+                            <group>
+                                <field name="category_ids" widget="many2many_tags"/>
+                                <field name="tags"/>
+                                <field name="featured_image"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="summary" placeholder="Short excerpt displayed in listings"/>
+                        </group>
+                        <group>
+                            <label for="content"/>
+                        </group>
+                        <field name="content" placeholder="Blog post content..."/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Blog Post Search View -->
+        <record id="blog_post_search_view" model="ir.ui.view">
+            <field name="name">blog.post.search</field>
+            <field name="model">blog.post</field>
+            <field name="arch" type="xml">
+                <search string="Search Blog Posts">
+                    <field name="name" string="Title"/>
+                    <field name="author_id"/>
+                    <field name="category_ids"/>
+                    <field name="tags"/>
+                    <filter name="featured" string="Featured" domain="[('featured', '=', True)]"/>
+                    <filter name="active" string="Active" domain="[('active', '=', True)]"/>
+                    <filter name="published_today" string="Published Today" 
+                            domain="[('publication_date', '>=', context_today().replace(hour=0, minute=0, second=0))]"/>
+                    <separator/>
+                    <filter name="by_author" string="By Author" context="{'group_by': 'author_id'}"/>
+                    <filter name="by_category" string="By Category" context="{'group_by': 'category_ids'}"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- Blog Category List View -->
+        <record id="blog_category_list_view" model="ir.ui.view">
+            <field name="name">blog.category.list</field>
+            <field name="model">blog.category</field>
+            <field name="arch" type="xml">
+                <list string="Blog Categories">
+                    <field name="name"/>
+                    <field name="slug"/>
+                    <field name="color"/>
+                    <field name="active"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Blog Category Form View -->
+        <record id="blog_category_form_view" model="ir.ui.view">
+            <field name="name">blog.category.form</field>
+            <field name="model">blog.category</field>
+            <field name="arch" type="xml">
+                <form string="Blog Category">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name"/>
+                            <h1>
+                                <field name="name" placeholder="Category Name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="slug"/>
+                            <field name="color"/>
+                            <field name="active"/>
+                        </group>
+                        <group>
+                            <field name="description" placeholder="Category description..."/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Blog Category Search View -->
+        <record id="blog_category_search_view" model="ir.ui.view">
+            <field name="name">blog.category.search</field>
+            <field name="model">blog.category</field>
+            <field name="arch" type="xml">
+                <search string="Search Blog Categories">
+                    <field name="name"/>
+                    <field name="slug"/>
+                    <filter name="active" string="Active" domain="[('active', '=', True)]"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- Blog Post Action -->
+        <record id="action_blog_post" model="ir.actions.act_window">
+            <field name="name">Blog Posts</field>
+            <field name="res_model">blog.post</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create your first blog post
+                </p>
+            </field>
+        </record>
+
+        <!-- Blog Category Action -->
+        <record id="action_blog_category" model="ir.actions.act_window">
+            <field name="name">Blog Categories</field>
+            <field name="res_model">blog.category</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create your first blog category
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>
