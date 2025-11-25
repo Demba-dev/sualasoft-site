@@ -7,7 +7,7 @@
             <field name="arch" type="xml">
                 <list>
                     <field name="name"/>
-                    <field name="sector"/>
+                    <field name="industry"/>
                     <field name="reference_type"/>
                 </list>
             </field>
@@ -21,7 +21,7 @@
                     <sheet>
                         <group>
                             <field name="name"/>
-                            <field name="sector"/>
+                            <field name="industry"/>
                             <field name="services"/>
                             <field name="reference_type"/>
                         </group>

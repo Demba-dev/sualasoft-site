@@ -21,6 +21,7 @@ class SualasoftContact(models.Model):
     
     created_date = fields.Datetime(string='Created Date', default=fields.Datetime.now)
     processed = fields.Boolean(string='Processed', default=False)
+    industry = fields.Char(string="Secteur d'activité")
 
 
 class SualasoftReference(models.Model):
@@ -41,8 +42,6 @@ class SualasoftReference(models.Model):
     )
     
     technologies = fields.Char(string='Technologies', help='Stack technique utilisée')
-    
-    image = fields.Image(string='Image')
     website = fields.Char(string='Client Website URL')
     
     featured = fields.Boolean(string='Featured', default=False)

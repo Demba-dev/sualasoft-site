@@ -14,6 +14,7 @@
         "security/ir.model.access.csv",
         "data/service_data.xml",
         "data/blog_data.xml",
+        "data/reference_data.xml",
         "views/layout.xml",
         "views/footer.xml",
         "views/home.xml",

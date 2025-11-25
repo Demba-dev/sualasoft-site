@@ -91,9 +91,6 @@
                         <group>
                             <field name="technologies"/>
                         </group>
-                        <group>
-                            <field name="image" widget="image" class="oe_avatar" options="{'preview_image': 'image'}"/>
-                        </group>
                         <notebook>
                             <page string="Description">
                                 <field name="description" widget="html"/>

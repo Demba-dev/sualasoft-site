@@ -4,77 +4,129 @@
     <template id="sualasoft_legal_notices" name="Mentions Légales">
         <t t-call="website.layout">
             <div id="wrap">
-                <div class="container my-5">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <h1 class="mb-4">Mentions Légales</h1>
-                            
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">1. Éditeur du site</h2>
-                                <p>
-                                    <strong>Sualasoft</strong><br/>
-                                    Entreprise spécialisée dans le développement logiciel et l'intégration Odoo.
-                                </p>
-                            </section>
+                <!-- Header Section -->
+                <section class="py-5" style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05) 0%, transparent 50%); pointer-events: none;"></div>
+                    <div class="container position-relative" style="z-index: 1;">
+                        <div class="text-center py-5">
+                            <h1 class="display-3 fw-bold mb-3">Mentions Légales</h1>
+                            <p class="lead" style="opacity: 0.95;">Informations légales relatives à Sualasoft et à son site web</p>
+                        </div>
+                    </div>
+                </section>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">2. Hébergement</h2>
-                                <p>
-                                    Ce site est hébergé sur une infrastructure cloud sécurisée.<br/>
-                                    Politique de sécurité : données chiffrées et sauvegardes régulières.
-                                </p>
-                            </section>
+                <!-- Content Section -->
+                <section class="py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2">
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--primary);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">1. Éditeur du site</h3>
+                                        <p class="card-text mb-2">
+                                            <strong style="color: var(--primary);">Sualasoft</strong>
+                                        </p>
+                                        <p class="card-text text-muted mb-0">
+                                            Entreprise malienne spécialisée dans le développement logiciel, la création d'applications mobiles et l'intégration Odoo.
+                                        </p>
+                                    </div>
+                                </div>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">3. Directeur de la Publication</h2>
-                                <p>
-                                    Le directeur de la publication est responsable du contenu publié sur ce site.
-                                </p>
-                            </section>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--secondary);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">2. Informations Légales</h3>
+                                        <p class="card-text mb-2">
+                                            <strong>Siège Social :</strong> Boulkassoumbougou rue 653, porte 80, Bamako, Mali
+                                        </p>
+                                        <p class="card-text mb-2">
+                                            <strong>Téléphone :</strong> +223 70 22 10 22
+                                        </p>
+                                        <p class="card-text mb-0">
+                                            <strong>Email :</strong> info@sualasoft.com
+                                        </p>
+                                    </div>
+                                </div>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">4. Propriété Intellectuelle</h2>
-                                <p>
-                                    Tous les contenus de ce site (textes, images, graphiques, logos) sont protégés par les lois sur la propriété intellectuelle. 
-                                    Toute reproduction ou utilisation sans autorisation est interdite.
-                                </p>
-                            </section>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--accent);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">3. Directeur de la Publication</h3>
+                                        <p class="card-text text-muted mb-0">
+                                            <strong>Munjata KEITA</strong>, Président Directeur Général de Sualasoft, est le responsable de la publication et du contenu publié sur ce site web.
+                                        </p>
+                                    </div>
+                                </div>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">5. Limitation de Responsabilité</h2>
-                                <p>
-                                    Sualasoft décline toute responsabilité pour :
-                                </p>
-                                <ul>
-                                    <li>Les interruptions d'accès au site</li>
-                                    <li>Les dommages résultant d'une utilisation inappropriée</li>
-                                    <li>Les virus ou logiciels malveillants</li>
-                                    <li>Les erreurs ou omissions du contenu</li>
-                                </ul>
-                            </section>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--success);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">4. Hébergement</h3>
+                                        <p class="card-text text-muted mb-0">
+                                            Ce site est hébergé sur une infrastructure cloud sécurisée avec politiques de sécurité strictes incluant le chiffrement SSL/TLS, les données chiffrées et sauvegardes régulières.
+                                        </p>
+                                    </div>
+                                </div>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">6. Liens Externes</h2>
-                                <p>
-                                    Sualasoft n'est pas responsable du contenu des sites externes auxquels renvoie ce site.
-                                </p>
-                            </section>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--warning);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">5. Propriété Intellectuelle</h3>
+                                        <p class="card-text mb-3 text-muted">
+                                            Tous les contenus de ce site (textes, images, graphiques, logos, vidéos) sont protégés par les lois sur la propriété intellectuelle et les droits d'auteur. Toute reproduction, transmission, modification ou utilisation sans autorisation explicite est formellement interdite.
+                                        </p>
+                                        <div class="alert alert-light border" style="background-color: rgba(245, 158, 11, 0.05); border-left: 3px solid var(--warning);">
+                                            <p class="mb-0"><small>© 2019-2025 Sualasoft. Tous droits réservés.</small></p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">7. Cookies</h2>
-                                <p>
-                                    Ce site utilise des cookies pour améliorer l'expérience utilisateur et analyser le trafic.
-                                </p>
-                            </section>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--danger);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">6. Limitation de Responsabilité</h3>
+                                        <p class="card-text text-muted mb-3">
+                                            Sualasoft décline toute responsabilité pour :
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-dash-circle" style="color: var(--danger); margin-right: 0.5rem;"></i>Les interruptions ou indisponibilités d'accès au site</li>
+                                            <li class="mb-2"><i class="bi bi-dash-circle" style="color: var(--danger); margin-right: 0.5rem;"></i>Les dommages directs ou indirects résultant d'une utilisation inappropriée</li>
+                                            <li class="mb-2"><i class="bi bi-dash-circle" style="color: var(--danger); margin-right: 0.5rem;"></i>Les virus, logiciels malveillants ou attaques informatiques</li>
+                                            <li class="mb-2"><i class="bi bi-dash-circle" style="color: var(--danger); margin-right: 0.5rem;"></i>Les erreurs, omissions ou inexactitudes du contenu</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                            <div class="alert alert-info mt-5">
-                                <p class="mb-0">
-                                    <strong>Dernière mise à jour :</strong> 24 Novembre 2025
-                                </p>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--primary);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">7. Liens Externes</h3>
+                                        <p class="card-text text-muted mb-0">
+                                            Sualasoft n'est pas responsable du contenu, de la disponibilité ou de la sécurité des sites externes auxquels renvoie ce site. La présence de liens externes ne constitue pas une approbation ou une recommandation.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--secondary);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">8. Cookies et Traceurs</h3>
+                                        <p class="card-text text-muted mb-3">
+                                            Ce site utilise des cookies et traceurs pour :
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Mémoriser vos préférences et identifiants</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Analyser le trafic et le comportement utilisateur</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Améliorer la performance et l'expérience utilisateur</li>
+                                        </ul>
+                                        <p class="card-text text-muted mt-3 mb-0">
+                                            Vous pouvez configurer votre navigateur pour refuser les cookies.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="alert" style="background-color: rgba(99, 102, 241, 0.1); border-left: 4px solid var(--primary);">
+                                    <p class="mb-0">
+                                        <strong>Dernière mise à jour :</strong> 25 Novembre 2025
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </t>
     </template>
@@ -83,133 +135,168 @@
     <template id="sualasoft_privacy_policy" name="Politique de Confidentialité">
         <t t-call="website.layout">
             <div id="wrap">
-                <div class="container my-5">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <h1 class="mb-4">Politique de Confidentialité</h1>
-                            
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">1. Collecte de Données</h2>
-                                <p>
-                                    Sualasoft collecte les données personnelles que vous nous fournissez volontairement via :
-                                </p>
-                                <ul>
-                                    <li>Le formulaire de contact</li>
-                                    <li>Les inscriptions à des newsletters</li>
-                                    <li>Les cookies et traceurs analytiques</li>
-                                </ul>
-                            </section>
+                <!-- Header Section -->
+                <section class="py-5" style="background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%); color: white; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05) 0%, transparent 50%); pointer-events: none;"></div>
+                    <div class="container position-relative" style="z-index: 1;">
+                        <div class="text-center py-5">
+                            <h1 class="display-3 fw-bold mb-3">Politique de Confidentialité</h1>
+                            <p class="lead" style="opacity: 0.95;">Nous respectons votre vie privée et la protection de vos données personnelles</p>
+                        </div>
+                    </div>
+                </section>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">2. Données Collectées</h2>
-                                <p>
-                                    Les données collectées incluent :
-                                </p>
-                                <ul>
-                                    <li>Nom et prénom</li>
-                                    <li>Adresse email</li>
-                                    <li>Numéro de téléphone</li>
-                                    <li>Message et contenu du formulaire</li>
-                                    <li>Données de navigation (cookies)</li>
-                                </ul>
-                            </section>
+                <!-- Content Section -->
+                <section class="py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2">
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--primary);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">1. Collecte de Données</h3>
+                                        <p class="card-text text-muted mb-3">
+                                            Sualasoft collecte les données personnelles que vous nous fournissez volontairement via :
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Le formulaire de contact</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Les inscriptions à des newsletters</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Les cookies et traceurs analytiques</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">3. Utilisation des Données</h2>
-                                <p>
-                                    Vos données sont utilisées pour :
-                                </p>
-                                <ul>
-                                    <li>Traiter votre demande de contact</li>
-                                    <li>Vous envoyer des communications pertinentes</li>
-                                    <li>Améliorer notre site web</li>
-                                    <li>Analyser le trafic et comprendre vos besoins</li>
-                                </ul>
-                            </section>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--secondary);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">2. Données Collectées</h3>
+                                        <p class="card-text text-muted mb-3">
+                                            Les données personnelles collectées incluent :
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-person-circle" style="color: var(--primary); margin-right: 0.5rem;"></i>Nom et prénom</li>
+                                            <li class="mb-2"><i class="bi bi-envelope" style="color: var(--primary); margin-right: 0.5rem;"></i>Adresse email</li>
+                                            <li class="mb-2"><i class="bi bi-telephone" style="color: var(--primary); margin-right: 0.5rem;"></i>Numéro de téléphone</li>
+                                            <li class="mb-2"><i class="bi bi-chat-dots" style="color: var(--primary); margin-right: 0.5rem;"></i>Message et contenu du formulaire</li>
+                                            <li class="mb-2"><i class="bi bi-mouse" style="color: var(--primary); margin-right: 0.5rem;"></i>Données de navigation (cookies, adresse IP)</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">4. Partage des Données</h2>
-                                <p>
-                                    Sualasoft ne partage vos données personnelles avec des tiers que :
-                                </p>
-                                <ul>
-                                    <li>Si vous nous y autorisez explicitement</li>
-                                    <li>Si la loi l'exige</li>
-                                    <li>Avec nos partenaires de service (hébergeurs, prestataires)</li>
-                                </ul>
-                            </section>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--accent);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">3. Utilisation des Données</h3>
+                                        <p class="card-text text-muted mb-3">
+                                            Vos données personnelles sont utilisées pour :
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Traiter votre demande de contact</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Vous envoyer des communications pertinentes et informations</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Améliorer notre site web et nos services</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Analyser le trafic et comprendre vos besoins</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">5. Sécurité des Données</h2>
-                                <p>
-                                    Nous mettons en place des mesures de sécurité appropriées pour protéger vos données :
-                                </p>
-                                <ul>
-                                    <li>Chiffrement SSL/TLS</li>
-                                    <li>Serveurs sécurisés</li>
-                                    <li>Accès restreint aux données</li>
-                                </ul>
-                            </section>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--success);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">4. Partage des Données</h3>
+                                        <p class="card-text text-muted mb-3">
+                                            Sualasoft ne partage vos données personnelles avec des tiers que dans les cas suivants :
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-shield-exclamation" style="color: var(--warning); margin-right: 0.5rem;"></i>Si vous nous y autorisez explicitement</li>
+                                            <li class="mb-2"><i class="bi bi-shield-exclamation" style="color: var(--warning); margin-right: 0.5rem;"></i>Si la loi l'exige</li>
+                                            <li class="mb-2"><i class="bi bi-shield-exclamation" style="color: var(--warning); margin-right: 0.5rem;"></i>Avec nos partenaires de service (hébergeurs, prestataires techniques)</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">6. Durée de Conservation</h2>
-                                <p>
-                                    Les données personnelles sont conservées aussi longtemps que nécessaire pour accomplir les objectifs pour lesquels elles ont été collectées, 
-                                    sauf si une durée plus longue est imposée par la loi.
-                                </p>
-                            </section>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--warning);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">5. Sécurité des Données</h3>
+                                        <p class="card-text text-muted mb-3">
+                                            Nous mettons en place des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos données :
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-lock" style="color: var(--success); margin-right: 0.5rem;"></i>Chiffrement SSL/TLS de toutes les communications</li>
+                                            <li class="mb-2"><i class="bi bi-lock" style="color: var(--success); margin-right: 0.5rem;"></i>Serveurs sécurisés avec pare-feu</li>
+                                            <li class="mb-2"><i class="bi bi-lock" style="color: var(--success); margin-right: 0.5rem;"></i>Accès restreint et contrôlé aux données</li>
+                                            <li class="mb-2"><i class="bi bi-lock" style="color: var(--success); margin-right: 0.5rem;"></i>Sauvegardes régulières et plans de continuité</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">7. Vos Droits</h2>
-                                <p>
-                                    Conformément au RGPD, vous disposez des droits suivants :
-                                </p>
-                                <ul>
-                                    <li>Droit d'accès à vos données</li>
-                                    <li>Droit de rectification</li>
-                                    <li>Droit à l'oubli</li>
-                                    <li>Droit à la portabilité</li>
-                                    <li>Droit d'opposition</li>
-                                </ul>
-                                <p>
-                                    Pour exercer ces droits, contactez-nous via le formulaire de contact.
-                                </p>
-                            </section>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--danger);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">6. Durée de Conservation</h3>
+                                        <p class="card-text text-muted mb-0">
+                                            Les données personnelles sont conservées aussi longtemps que nécessaire pour accomplir les objectifs pour lesquels elles ont été collectées. À titre général, les données sont supprimées après 3 ans d'inactivité, sauf si une durée plus longue est imposée par la loi ou nécessaire pour établir, exercer ou défendre des droits en justice.
+                                        </p>
+                                    </div>
+                                </div>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">8. Cookies</h2>
-                                <p>
-                                    Ce site utilise des cookies pour :
-                                </p>
-                                <ul>
-                                    <li>Mémoriser vos préférences</li>
-                                    <li>Analyser le trafic (Google Analytics)</li>
-                                    <li>Améliorer la performance</li>
-                                </ul>
-                                <p>
-                                    Vous pouvez configurer votre navigateur pour refuser les cookies.
-                                </p>
-                            </section>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--primary);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">7. Vos Droits (RGPD)</h3>
+                                        <p class="card-text text-muted mb-3">
+                                            Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-eye" style="color: var(--primary); margin-right: 0.5rem;"></i><strong>Droit d'accès :</strong> Accéder à vos données personnelles</li>
+                                            <li class="mb-2"><i class="bi bi-pencil" style="color: var(--primary); margin-right: 0.5rem;"></i><strong>Droit de rectification :</strong> Corriger vos données inexactes</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle" style="color: var(--primary); margin-right: 0.5rem;"></i><strong>Droit à l'oubli :</strong> Demander la suppression de vos données</li>
+                                            <li class="mb-2"><i class="bi bi-cloud-download" style="color: var(--primary); margin-right: 0.5rem;"></i><strong>Droit à la portabilité :</strong> Récupérer vos données dans un format standard</li>
+                                            <li class="mb-2"><i class="bi bi-hand-thumbs-down" style="color: var(--primary); margin-right: 0.5rem;"></i><strong>Droit d'opposition :</strong> Vous opposer au traitement de vos données</li>
+                                        </ul>
+                                        <p class="card-text text-muted mt-3 mb-0">
+                                            Pour exercer ces droits, veuillez nous <a href="/contact" style="color: var(--primary); font-weight: 500;">contacter via le formulaire de contact</a>.
+                                        </p>
+                                    </div>
+                                </div>
 
-                            <section class="mb-5">
-                                <h2 class="h4 mb-3">9. Contact et Réclamations</h2>
-                                <p>
-                                    Pour toute question concernant cette politique ou pour exercer vos droits :
-                                </p>
-                                <p>
-                                    <strong>Email :</strong> contact@sualasoft.com<br/>
-                                    <strong>Formulaire :</strong> <a href="/contact">Nous contacter</a>
-                                </p>
-                            </section>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--secondary);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">8. Cookies et Traceurs</h3>
+                                        <p class="card-text text-muted mb-3">
+                                            Ce site utilise des cookies et traceurs pour :
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Mémoriser vos préférences et identifiants</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Analyser le trafic et le comportement utilisateur (Google Analytics)</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Améliorer la performance et l'expérience utilisateur</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Personaliser le contenu et les recommandations</li>
+                                        </ul>
+                                        <p class="card-text text-muted mt-3 mb-0">
+                                            Vous pouvez configurer votre navigateur pour refuser les cookies. Certains services peuvent être affectés si vous désactivez les cookies essentiels.
+                                        </p>
+                                    </div>
+                                </div>
 
-                            <div class="alert alert-info mt-5">
-                                <p class="mb-0">
-                                    <strong>Dernière mise à jour :</strong> 24 Novembre 2025
-                                </p>
+                                <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid var(--accent);">
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title fw-bold mb-3">9. Contact &amp; Exercice des Droits</h3>
+                                        <p class="card-text text-muted mb-3">
+                                            Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits :
+                                        </p>
+                                        <p class="card-text">
+                                            <strong style="color: var(--primary);">Email :</strong> info@sualasoft.com<br/>
+                                            <strong style="color: var(--primary);">Téléphone :</strong> +223 70 22 10 22<br/>
+                                            <strong style="color: var(--primary);">Adresse :</strong> Boulkassoumbougou rue 653, porte 80, Bamako, Mali
+                                        </p>
+                                        <p class="card-text text-muted mb-0 mt-3">
+                                            Vous pouvez également utiliser notre <a href="/contact" style="color: var(--secondary); font-weight: 500;">formulaire de contact en ligne</a>.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="alert" style="background-color: rgba(99, 102, 241, 0.1); border-left: 4px solid var(--primary);">
+                                    <p class="mb-0">
+                                        <strong>Dernière mise à jour :</strong> 25 Novembre 2025
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </t>
     </template>

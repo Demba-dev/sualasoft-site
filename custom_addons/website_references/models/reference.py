@@ -5,7 +5,8 @@ class SualasoftReference(models.Model):
     _description = "Reference / Portfolio"
 
     name = fields.Char(required=True)
-    sector = fields.Char()
+    industry = fields.Char(string='Industry', help='Client industry sector')
+    website = fields.Char(string='Client Website URL')
     services = fields.Char()
     description = fields.Text()
     image_id = fields.Binary()
@@ -13,4 +14,3 @@ class SualasoftReference(models.Model):
     service_ids = fields.Many2many('sualasoft.service', string="Services liés")
     sequence = fields.Integer(default=10)
     active = fields.Boolean(default=True)
-

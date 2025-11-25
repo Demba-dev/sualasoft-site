@@ -3,15 +3,172 @@
     <template id="sualasoft_services" name="Sualasoft Services">
         <t t-call="website.layout">
             <div id="wrap">
-                <div class="container">
-                    <h1>Nos Services</h1>
-                    <ul>
-                        <li>Développement Mobile</li>
-                        <li>Développement Web</li>
-                        <li>Infrastructure</li>
-                        <li>Implémentation Odoo</li>
-                    </ul>
-                </div>
+                <!-- Header Section -->
+                <section class="py-5" style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05) 0%, transparent 50%); pointer-events: none;"></div>
+                    <div class="container position-relative" style="z-index: 1;">
+                        <div class="text-center py-5">
+                            <h1 class="display-3 fw-bold mb-3">Nos Services</h1>
+                            <p class="lead" style="font-size: 1.25rem; opacity: 0.95;">Solutions digitales complètes pour transformer votre vision en réalité</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Services Grid -->
+                <section class="py-5">
+                    <div class="container">
+                        <div class="row g-4">
+                            <!-- Développement Mobile -->
+                            <div class="col-lg-6 mb-4">
+                                <div class="card border-0 shadow-md h-100" style="transition: all 0.3s ease; border-left: 5px solid var(--primary);">
+                                    <div class="card-body p-4">
+                                        <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary);">📱</div>
+                                        <h4 class="card-title fw-bold mb-3">Développement Mobile</h4>
+                                        <p class="card-text text-muted mb-3">Nous créons des applications mobiles natives et cross-platform pour Android et iOS. Nos applications sont optimisées pour la performance, l'accessibilité et l'expérience utilisateur.</p>
+                                        <ul class="list-unstyled mb-3" style="font-size: 0.95rem;">
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Applications natives (Java, Swift)</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Développement cross-platform (React Native, Flutter)</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Intégration API et backends</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Déploiement sur Google Play &amp; App Store</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Développement Web -->
+                            <div class="col-lg-6 mb-4">
+                                <div class="card border-0 shadow-md h-100" style="transition: all 0.3s ease; border-left: 5px solid var(--secondary);">
+                                    <div class="card-body p-4">
+                                        <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--secondary);">💻</div>
+                                        <h4 class="card-title fw-bold mb-3">Développement Web</h4>
+                                        <p class="card-text text-muted mb-3">Développement de sites web et applications web modernes, responsives et performantes. Nous utilisons les technologies les plus actuelles pour garantir qualité et maintenabilité.</p>
+                                        <ul class="list-unstyled mb-3" style="font-size: 0.95rem;">
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Frontend moderne (React, Vue, Angular)</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Backend robuste (Python, Node.js, PHP)</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Bases de données optimisées</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Design responsive et UX/UI modernes</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Infrastructure &amp; DevOps -->
+                            <div class="col-lg-6 mb-4">
+                                <div class="card border-0 shadow-md h-100" style="transition: all 0.3s ease; border-left: 5px solid var(--accent);">
+                                    <div class="card-body p-4">
+                                        <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--accent);">⚙️</div>
+                                        <h4 class="card-title fw-bold mb-3">Infrastructure &amp; DevOps</h4>
+                                        <p class="card-text text-muted mb-3">Nous mettons en place une infrastructure cloud sécurisée et scalable pour vos applications. Services de monitoring, maintenance et optimisation continus.</p>
+                                        <ul class="list-unstyled mb-3" style="font-size: 0.95rem;">
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Infrastructure cloud (AWS, Azure, Google Cloud)</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Containerisation (Docker, Kubernetes)</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>CI/CD pipelines automatisés</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Monitoring &amp; alerting 24/7</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Implémentation Odoo -->
+                            <div class="col-lg-6 mb-4">
+                                <div class="card border-0 shadow-md h-100" style="transition: all 0.3s ease; border-left: 5px solid var(--success);">
+                                    <div class="card-body p-4">
+                                        <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--success);">📊</div>
+                                        <h4 class="card-title fw-bold mb-3">Implémentation Odoo</h4>
+                                        <p class="card-text text-muted mb-3">Implémentation complète de l'ERP Odoo pour votre entreprise. De la configuration initiale au déploiement et formation, nous vous accompagnons à chaque étape.</p>
+                                        <ul class="list-unstyled mb-3" style="font-size: 0.95rem;">
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Analyse et configuration d'Odoo</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Développement de modules personnalisés</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Migration de données</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Formation &amp; support utilisateur</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Additional Services -->
+                <section class="py-5" style="background-color: var(--gray-50);">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="fw-bold mb-3">Services Complémentaires</h2>
+                            <p class="lead text-muted">Solutions additionnelles pour soutenir votre croissance</p>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-3 text-center">
+                                <div style="font-size: 2rem; margin-bottom: 1rem; color: var(--primary);">🎨</div>
+                                <h5 class="fw-bold mb-2">Design &amp; UX/UI</h5>
+                                <p class="text-muted" style="font-size: 0.95rem;">Création de designs modernes et intuitifs pour vos applications et sites web.</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div style="font-size: 2rem; margin-bottom: 1rem; color: var(--secondary);">🔍</div>
+                                <h5 class="fw-bold mb-2">Consulting IT</h5>
+                                <p class="text-muted" style="font-size: 0.95rem;">Audit technologique et stratégie numérique pour optimiser vos processus.</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div style="font-size: 2rem; margin-bottom: 1rem; color: var(--accent);">🧪</div>
+                                <h5 class="fw-bold mb-2">QA &amp; Testing</h5>
+                                <p class="text-muted" style="font-size: 0.95rem;">Tests rigoureux pour assurer la qualité et la fiabilité de vos solutions.</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div style="font-size: 2rem; margin-bottom: 1rem; color: var(--success);">📚</div>
+                                <h5 class="fw-bold mb-2">Formation &amp; Support</h5>
+                                <p class="text-muted" style="font-size: 0.95rem;">Formations adaptées et support technique continu pour vos équipes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Process Section -->
+                <section class="py-5">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="fw-bold mb-3">Notre Approche</h2>
+                            <p class="lead text-muted">Un processus éprouvé pour garantir votre succès</p>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <div style="width: 60px; height: 60px; background-color: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5rem; margin: 0 auto 1.5rem;">1</div>
+                                    <h5 class="fw-bold mb-2">Découverte</h5>
+                                    <p class="text-muted" style="font-size: 0.95rem;">Compréhension approfondie de vos besoins et objectifs</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <div style="width: 60px; height: 60px; background-color: var(--secondary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5rem; margin: 0 auto 1.5rem;">2</div>
+                                    <h5 class="fw-bold mb-2">Conception</h5>
+                                    <p class="text-muted" style="font-size: 0.95rem;">Design et planification détaillée de la solution</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <div style="width: 60px; height: 60px; background-color: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5rem; margin: 0 auto 1.5rem;">3</div>
+                                    <h5 class="fw-bold mb-2">Développement</h5>
+                                    <p class="text-muted" style="font-size: 0.95rem;">Implémentation agile et itérative</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <div style="width: 60px; height: 60px; background-color: var(--success); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5rem; margin: 0 auto 1.5rem;">4</div>
+                                    <h5 class="fw-bold mb-2">Livraison</h5>
+                                    <p class="text-muted" style="font-size: 0.95rem;">Déploiement et support continu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA Section -->
+                <section class="py-5" style="background: linear-gradient(135deg, var(--dark) 0%, var(--gray-800) 100%); color: white;">
+                    <div class="container text-center">
+                        <h2 class="mb-3 fw-bold">Prêt à Commencer ?</h2>
+                        <p class="lead mb-4 opacity-75">Contactez-nous pour discuter de votre projet</p>
+                        <a href="/contact" class="btn btn-light btn-lg fw-bold" style="background-color: white; color: var(--dark);">Demander une consultation</a>
+                    </div>
+                </section>
             </div>
         </t>
     </template>

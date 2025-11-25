@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- Références Développement Mobile -->
+        <record id="reference_kurana" model="sualasoft.reference">
+            <field name="name">Kurana - Qur'an Application</field>
+            <field name="description">Application mobile complète du Saint Coran avec texte arabe, traductions en N'ko, français et anglais. Fonctionnalités: recherche avancée, bookmarks, accès hors ligne, lecture audio.</field>
+            <field name="industry">Éducation Religieuse</field>
+            <field name="technologies">React Native, Firebase, Expo</field>
+            <field name="website">https://play.google.com/store</field>
+            <field name="featured">True</field>
+            <field name="sequence">1</field>
+            <field name="service_ids" eval="[(6, 0, [ref('website_sualasoft.service_mobile')])]"/>
+        </record>
+
+        <record id="reference_lerada" model="sualasoft.reference">
+            <field name="name">Lerada Mobile - Digital Library</field>
+            <field name="description">Bibliothèque numérique mobile offrant accès à une variété de livres en langue N'ko. Plateforme pour la promotion de la littérature N'ko et l'apprentissage de la langue.</field>
+            <field name="industry">Éducation &amp; Culture</field>
+            <field name="technologies">Flutter, Dart, SQLite</field>
+            <field name="website">https://play.google.com/store</field>
+            <field name="featured">True</field>
+            <field name="sequence">2</field>
+            <field name="service_ids" eval="[(6, 0, [ref('website_sualasoft.service_mobile')])]"/>
+        </record>
+
+        <record id="reference_kodofolan" model="sualasoft.reference">
+            <field name="name">Kodofolan - N'ko Writing App</field>
+            <field name="description">Application spécialisée pour l'apprentissage et la maîtrise de l'écriture N'ko. Exercices progressifs, tests adaptatifs, et système de gamification pour motiver l'apprentissage.</field>
+            <field name="industry">Apprentissage Linguistique</field>
+            <field name="technologies">React Native, Node.js, MongoDB</field>
+            <field name="website">https://play.google.com/store</field>
+            <field name="featured">True</field>
+            <field name="sequence">3</field>
+            <field name="service_ids" eval="[(6, 0, [ref('website_sualasoft.service_mobile')])]"/>
+        </record>
+
+        <!-- Références Développement Web -->
+        <record id="reference_sualasoft_web" model="sualasoft.reference">
+            <field name="name">Sualasoft Corporate Website</field>
+            <field name="description">Site vitrine et portail d'information de Sualasoft. Présente les services, projets et capacités de l'entreprise. Conçu avec responsive design moderne et optimisation SEO.</field>
+            <field name="industry">Technologie &amp; Services</field>
+            <field name="technologies">Odoo CMS, Bootstrap 5, JavaScript ES6+</field>
+            <field name="website">https://sualasoft.com</field>
+            <field name="featured">True</field>
+            <field name="sequence">4</field>
+            <field name="service_ids" eval="[(6, 0, [ref('website_sualasoft.service_web')])]"/>
+        </record>
+
+        <record id="reference_education_portal" model="sualasoft.reference">
+            <field name="name">E-Learning Platform Mali</field>
+            <field name="description">Plateforme d'apprentissage en ligne pour institutions éducatives maliennes. Gestion des cours, suivi des étudiants, forums d'interaction et certificats numériques.</field>
+            <field name="industry">Éducation</field>
+            <field name="technologies">Django, React, PostgreSQL, AWS</field>
+            <field name="website">https://example-education.com</field>
+            <field name="featured">False</field>
+            <field name="sequence">5</field>
+            <field name="service_ids" eval="[(6, 0, [ref('website_sualasoft.service_web')])]"/>
+        </record>
+
+        <record id="reference_business_directory" model="sualasoft.reference">
+            <field name="name">Business Directory West Africa</field>
+            <field name="description">Annuaire numérique des entreprises ouest-africaines. Recherche avancée, profils d'entreprises détaillés, système de notation et avis clients intégré.</field>
+            <field name="industry">Commerce &amp; Services</field>
+            <field name="technologies">Vue.js, Node.js, Elasticsearch, Firebase</field>
+            <field name="website">https://example-directory.com</field>
+            <field name="featured">False</field>
+            <field name="sequence">6</field>
+            <field name="service_ids" eval="[(6, 0, [ref('website_sualasoft.service_web')])]"/>
+        </record>
+
+        <!-- Références Intégration Odoo -->
+        <record id="reference_odoo_import_company" model="sualasoft.reference">
+            <field name="name">Odoo ERP - Import &amp; Export Company</field>
+            <field name="description">Implémentation complète d'Odoo pour une entreprise d'import/export. Gestion de la chaîne logistique, comptabilité, CRM et reporting personnalisés.</field>
+            <field name="industry">Commerce International</field>
+            <field name="technologies">Odoo 19, Python, PostgreSQL</field>
+            <field name="website">https://example-company.com</field>
+            <field name="featured">True</field>
+            <field name="sequence">7</field>
+            <field name="service_ids" eval="[(6, 0, [ref('website_sualasoft.service_odoo')])]"/>
+        </record>
+
+        <record id="reference_odoo_manufacturing" model="sualasoft.reference">
+            <field name="name">Odoo Manufacturing - Production Company</field>
+            <field name="description">Solution Odoo pour PME manufacturière. Gestion de production, nomenclatures, planification des achats, qualité et traçabilité complète.</field>
+            <field name="industry">Manufacturier</field>
+            <field name="technologies">Odoo 19, Python, MES Module</field>
+            <field name="website">https://example-manufacturing.com</field>
+            <field name="featured">False</field>
+            <field name="sequence">8</field>
+            <field name="service_ids" eval="[(6, 0, [ref('website_sualasoft.service_odoo')])]"/>
+        </record>
+
+        <record id="reference_odoo_retail" model="sualasoft.reference">
+            <field name="name">Odoo POS - Retail Chain</field>
+            <field name="description">Déploiement Odoo POS pour chaîne de distribution multi-points de vente. Synchronisation inventaire centralisée, gestion de prix dynamique et analytics ventes.</field>
+            <field name="industry">Commerce de Détail</field>
+            <field name="technologies">Odoo 19, POS, Python</field>
+            <field name="website">https://example-retail.com</field>
+            <field name="featured">False</field>
+            <field name="sequence">9</field>
+            <field name="service_ids" eval="[(6, 0, [ref('website_sualasoft.service_odoo')])]"/>
+        </record>
+
+        <!-- Références Infrastructure &amp; DevOps -->
+        <record id="reference_cloud_migration" model="sualasoft.reference">
+            <field name="name">Cloud Migration Project</field>
+            <field name="description">Migration complète d'infrastructure on-premise vers AWS. Planification, migration des données, optimisation des coûts, formation équipes DevOps.</field>
+            <field name="industry">Services Informatiques</field>
+            <field name="technologies">AWS, Docker, Kubernetes, Terraform</field>
+            <field name="website">https://example-cloud.com</field>
+            <field name="featured">True</field>
+            <field name="sequence">10</field>
+            <field name="service_ids" eval="[(6, 0, [ref('website_sualasoft.service_infra')])]"/>
+        </record>
+
+        <record id="reference_ci_cd_pipeline" model="sualasoft.reference">
+            <field name="name">CI/CD Pipeline Implementation</field>
+            <field name="description">Mise en place de pipelines CI/CD automatisés pour équipe de développement. Tests automatisés, déploiement continu, monitoring et alerting intégré.</field>
+            <field name="industry">Développement Logiciel</field>
+            <field name="technologies">GitLab CI, Docker, Jenkins, Prometheus</field>
+            <field name="website">https://example-devops.com</field>
+            <field name="featured">False</field>
+            <field name="sequence">11</field>
+            <field name="service_ids" eval="[(6, 0, [ref('website_sualasoft.service_infra')])]"/>
+        </record>
+
+        <!-- Références Multi-Services -->
+        <record id="reference_fintech_solution" model="sualasoft.reference">
+            <field name="name">FinTech Mobile &amp; Web Solution</field>
+            <field name="description">Solution fintech complète: app mobile (iOS/Android) et portail web pour transferts d'argent et paiements. Infrastructure cloud sécurisée avec certification PCI-DSS.</field>
+            <field name="industry">Services Financiers</field>
+            <field name="technologies">React Native, React.js, Node.js, AWS, Docker</field>
+            <field name="website">https://example-fintech.com</field>
+            <field name="featured">True</field>
+            <field name="sequence">12</field>
+            <field name="service_ids" eval="[(6, 0, [ref('website_sualasoft.service_mobile'), ref('website_sualasoft.service_web'), ref('website_sualasoft.service_infra')])]"/>
+        </record>
+
+        <record id="reference_enterprise_solution" model="sualasoft.reference">
+            <field name="name">Enterprise Digital Transformation</field>
+            <field name="description">Transformation numérique complète d'une grande entreprise: ERP Odoo, portail web clients, app mobile, infrastructure cloud et support 24/7.</field>
+            <field name="industry">Entreprise Généraliste</field>
+            <field name="technologies">Odoo 19, React, React Native, AWS, Docker, Kubernetes</field>
+            <field name="website">https://example-enterprise.com</field>
+            <field name="featured">True</field>
+            <field name="sequence">13</field>
+            <field name="service_ids" eval="[(6, 0, [ref('website_sualasoft.service_mobile'), ref('website_sualasoft.service_web'), ref('website_sualasoft.service_odoo'), ref('website_sualasoft.service_infra')])]"/>
+        </record>
+    </data>
+</odoo>
